@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">weather</string>
+    <string name="app_name">Weather App</string>
+    <string name="error_message">Error, Try Again!</string>
 </resources>

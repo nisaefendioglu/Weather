@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/swipe_refresh_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_bg"
+    android:background="@drawable/bg_screen"
     tools:context=".view.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,7 +18,7 @@
             android:id="@+id/tv_error"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Error, Try Again!e"
+            android:text="@string/error_message"
             android:padding="15dp"
             android:background="#4DFFFFFF"
             android:visibility="gone"
@@ -72,7 +73,7 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:padding="10dp"
-                    android:src="@drawable/geolocation" />
+                    android:src="@drawable/ic_baseline_search_24" />
 
             </LinearLayout>
 
@@ -128,7 +129,7 @@
                         android:id="@+id/img_weather_pictures"
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
-                        android:src="@drawable/sunrise" />
+                        android:src="@drawable/ic_baseline_cloud_queue_24" />
 
                 </LinearLayout>
 
@@ -212,3 +213,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
