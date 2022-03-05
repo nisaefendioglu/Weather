@@ -46,21 +46,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:background="#4DFFFFFF"
+                android:background="@drawable/radius"
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#55FFFFFF"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
                     app:endIconMode="clear_text">
 
-                    <com.google.android.material.textfield.TextInputEditText
+                    <EditText
                         android:id="@+id/edt_city_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text"
+                        android:background="@drawable/radius"
                         android:maxLines="1"
                         android:hint="City Name"
                         android:lines="1" />
@@ -94,15 +96,32 @@
                     android:layout_marginBottom="100dp"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/status"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:id="@+id/addressContainer"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Weather"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
+                        android:gravity="center"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TURKEY, TR"
+                            android:textAllCaps="true"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/updated_at"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 March 2022, 20:08 PM"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
                     <TextView
                         android:id="@+id/tv_degree"
                         android:layout_width="wrap_content"
