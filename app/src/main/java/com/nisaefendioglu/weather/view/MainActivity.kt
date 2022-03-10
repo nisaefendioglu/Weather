@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         val c = Calendar.getInstance()
         val year = c.get(Calendar.YEAR)
-        val month = c.get(Calendar.MONTH)
+        val month = c.get(Calendar.MONTH) + 1
         val day = c.get(Calendar.DAY_OF_MONTH)
         val hour = c.get(Calendar.HOUR_OF_DAY)
         val minute = c.get(Calendar.MINUTE)
